@@ -1,0 +1,7 @@
+<a href="{% url 'pendings' %">Cancel</a>
+
+<form method = "POST">
+    {% csrf_token %}
+    <p> Do you want detele the task "{{tasks}} ?"</p>
+    <input type="submit" value="Delete">
+</form>
